@@ -1,14 +1,11 @@
 package com.aflores.rest.services.impl;
 
 import com.aflores.rest.entities.Person;
-import com.aflores.rest.repositories.PersonRepository;
 import com.aflores.rest.services.PersonService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class PersonServiceImpl implements PersonService {
