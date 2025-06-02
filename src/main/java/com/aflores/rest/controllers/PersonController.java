@@ -17,17 +17,8 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-    /*@Value("${app.message.personalized}")
-    private String messageFromDocker;*/
-
-    /*@PostMapping
-    public ResponseEntity<?> createNewPerson(@RequestBody Person person) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(personService.createPerson(person));
-    }*/
-
     @GetMapping
     public ResponseEntity<?> getAllPersons() {
-        /*log.info("================= Mensaje desde una variable de entorno docker {}", messageFromDocker);*/
         return ResponseEntity.ok(personService.getPersons());
     }
 

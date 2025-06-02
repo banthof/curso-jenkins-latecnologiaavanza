@@ -13,15 +13,6 @@ import java.util.Optional;
 @Service
 public class PersonServiceImpl implements PersonService {
 
-    /*@Autowired
-    private PersonRepository personRepository;*/
-
-    /*@Override
-    public Person createPerson(Person person) {
-        return personRepository.save(person);
-    }*/
-
-    // Lista en memoria para mockear datos
     private List<Person> persons = new ArrayList<>();
 
     public PersonServiceImpl() {
@@ -36,17 +27,15 @@ public class PersonServiceImpl implements PersonService {
         persons.add(new Person(9, "Isabel", "Navarro", "isabel@example.com"));
         persons.add(new Person(10, "David", "Torres", "david@example.com"));
         persons.add(new Person(11, "Mika", "Flores", "mikaflo@example.com"));
-    } /*este es un comentario*/
+    }
 
     @Override
     public List<Person> getPersons() {
-        /*return personRepository.findAll();*/
         return persons;
     }
 
     @Override
     public Person getById(Integer id) {
-        /*return personRepository.findById(id).orElse(null);*/
         return persons.stream()
                 .filter(p -> p.getId().equals(id))
                 .findFirst()
