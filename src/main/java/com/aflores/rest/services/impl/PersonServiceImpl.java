@@ -35,6 +35,7 @@ public class PersonServiceImpl implements PersonService {
         persons.add(new Person(8, "Miguel", "Romero", "miguel@example.com"));
         persons.add(new Person(9, "Isabel", "Navarro", "isabel@example.com"));
         persons.add(new Person(10, "David", "Torres", "david@example.com"));
+        persons.add(new Person(11, "Mika", "Flores", "mikaflo@example.com"));
     }
 
     @Override
