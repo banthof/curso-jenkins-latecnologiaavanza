@@ -16,7 +16,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
-public class PersonControllerTest {
+public class PersonControllerTest {/*pruebas unitarias en spring boot*/
 
     @InjectMocks
     private PersonController personController;
