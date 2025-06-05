@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.aflores</groupId>
     <artifactId>rest-example</artifactId>
-    <version>3.2.19</version>
+    <version>3.2.20</version>
     <name>rest-example</name>
     <description>rest-example</description>
     <url/>
